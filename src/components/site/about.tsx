@@ -127,29 +127,6 @@ export function About() {
             </ol>
           </div>
 
-          {/* خاطره‌هایی از سال‌های خدمت */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-3">
-            {[
-              { src: "/images/gallery/servants/servant-2.jpg", alt: "یکی از خادمان کوچک موکب" },
-              { src: "/images/gallery/servants/servant-11.jpg", alt: "پارچه‌نوشته و آذین‌بندی موکب در شب" },
-              { src: "/images/gallery/servants/servant-12.jpg", alt: "نمایی از موکب و پارچه‌نوشته عزاداری" },
-            ].map((photo, i) => (
-              <Reveal key={photo.src} delay={i * 0.05}>
-                <figure className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-background-deep">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-transparent to-transparent" />
-                  <figcaption className="absolute inset-x-0 bottom-0 p-4 text-sm text-white">
-                    {photo.alt}
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </div>
     </section>
