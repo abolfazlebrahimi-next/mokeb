@@ -13,11 +13,6 @@ export const siteConfig = {
   description:
     "وب‌سایت رسمی موکب عُشّاقُ الرُّقَیّه (س)؛ پوشش رسانه‌ای موکب، پذیرش کمک‌های مالی و غیرمالی و معرفی موکب. روایت زندگینامه‌های خاندان اهل‌بیت (ع) و وقایع ده روز از مدینه تا کربلا.",
 
-  /** نوع فعالیت و هدف سایت: پوشش رسانه‌ای + کمک‌ها + معرفی موکب. */
-  activityType: "پذیرایی",
-  activityNote:
-    "ما در شهر نظرآباد زائر نداریم؛ خدمت ما پذیرایی از عاشقان اهل‌بیت (ع) است.",
-
   yearsOfService: 4,
   establishedYear: 1402,
 
@@ -65,6 +60,6 @@ export const navSections = [
   { id: "gallery", label: "گالری" },
   { id: "martyrs", label: "زندگینامه‌ها" },
   { id: "nights", label: "وقایع محرم" },
-  { id: "help", label: "همکاری با ما" },
+  { id: "help", label: "کمک به ما" },
   { id: "location", label: "موقعیت" },
 ] as const;

@@ -97,7 +97,7 @@ export function Hero() {
                 className="group inline-flex items-center gap-2 rounded-full border border-primary/40 bg-card/60 px-6 py-3 text-sm font-semibold text-primary backdrop-blur transition hover:bg-secondary/70"
               >
                 <HeartHandshake className="h-4 w-4" />
-                همکاری با ما
+                کمک به ما
               </a>
             </motion.div>
 

@@ -83,13 +83,6 @@ export function Figures() {
           ))}
         </div>
 
-        <Reveal className="mt-8 text-center">
-          <p className="text-xs text-muted-foreground leading-6">
-            یادداشت: متن زندگینامه‌ها بر اساس متن تاریخی-مذهبی موکب تنظیم شده و
-            منابع کلاسیک (تاریخ طبری، الارشاد، مقتل ابی‌مخنف، لهوف، نفس المهموم)
-            به‌عنوان یادداشت سندی همراه آن آمده‌اند.
-          </p>
-        </Reveal>
       </div>
     </section>
   );

@@ -73,7 +73,7 @@ export function Help() {
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="text-center">
-          <Eyebrow>همکاری با ما</Eyebrow>
+          <Eyebrow>کمک به ما</Eyebrow>
           <h2 className="mt-3 font-darya text-3xl text-primary sm:text-4xl">
             ما را یاری دهید
           </h2>

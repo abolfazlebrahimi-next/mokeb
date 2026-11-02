@@ -10,22 +10,22 @@ const years = [
   {
     year: "۱۴۰۲",
     title: "آغاز راه",
-    desc: "نخستین گام‌های موکب با عشق به خاندان اهل‌بیت (ع) و در مسیر پذیرایی از عاشقان اهل‌بیت برداشته شد.",
+    desc: "در سال ۱۴۰۲، خدمت را ساده و صمیمی آغاز کردیم؛ با دو کتری، از جلوی خانه‌مان چای می‌دادیم و در کوچه خودمان هیئت برپا می‌کردیم.",
   },
   {
     year: "۱۴۰۳",
     title: "گسترش پذیرایی",
-    desc: "گسترش دامنه پذیرایی و آراستن موکب برای پذیرایی بهتر از عاشقان اهل‌بیت (ع).",
+    desc: "در سال ۱۴۰۳، بساطمان را تا سرِ کوچه بردیم و با چند تخته و چوب، نخستین موکب کوچکمان را ساختیم؛ روزانه نزدیک به ۳۰۰ چای به دست مردم می‌رساندیم.",
   },
   {
     year: "۱۴۰۴",
     title: "استواری و ثبات",
-    desc: "تثبیت موکب در مسیر پذیرایی و آغوش‌گشیدن بیشتر از عزاداران و عاشقان اهل‌بیت.",
+    desc: "در سال ۱۴۰۴، به مکان فعلی آمدیم و موکبمان را برپا کردیم؛ با برکت همراهی مردم، روزانه حدود ۱٬۵۰۰ استکان چای تقدیم عاشقان اهل‌بیت (ع) شد.",
   },
   {
     year: "۱۴۰۵",
     title: "ادامه مسیر",
-    desc: "تداوم پذیرایی به عشق خاندان اهل‌بیت (ع) و آمادگی برای راه‌های تازه.",
+    desc: "در سال ۱۴۰۵، موکب را گسترده‌تر کردیم و هر روز بیش از ۲٬۰۰۰ چای به دست مردم رساندیم؛ در کنار چای، با حلوا، شربت، شیر و شیرکاکائو نیز پذیرای میهمانان شدیم.",
   },
 ];
 
@@ -63,9 +63,8 @@ export function About() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-foreground/75 leading-8">
             موکب عُشّاقُ الرُّقَیّه {siteConfig.honorific}، خانه‌ای است که به عشق
-            خاندان اهل‌بیت (ع) ساخته شده. در چهار سال گذشته، پذیرایی از عزاداران
-            و عاشقان حسینی، محور همه کارهای ما بوده است. ما در شهر نظرآباد زائر
-            نداریم؛ خدمت ما پذیرایی از عاشقان اهل‌بیت (ع) است.
+            خاندان اهل‌بیت (ع) ساخته شده. از نخستین استکان‌های چای تا موکب امروز،
+            پذیرایی از عزاداران و عاشقان حسینی، محور خدمت ما بوده است.
           </p>
         </Reveal>
 
@@ -128,17 +127,24 @@ export function About() {
             </ol>
           </div>
 
-          {/* Reserved historical photos row */}
+          {/* خاطره‌هایی از سال‌های خدمت */}
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
-            {[0, 1, 2].map((i) => (
-              <Reveal key={i} delay={i * 0.05}>
+            {[
+              { src: "/images/gallery/servants/1-servant-2.jpg", alt: "یکی از خادمان کوچک موکب" },
+              { src: "/images/gallery/servants/2-servant-11.jpg", alt: "پارچه‌نوشته و آذین‌بندی موکب در شب" },
+              { src: "/images/gallery/servants/3-servant-12.jpg", alt: "نمایی از موکب و پارچه‌نوشته عزاداری" },
+            ].map((photo, i) => (
+              <Reveal key={photo.src} delay={i * 0.05}>
                 <figure className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-background-deep">
-                  <div className="grain absolute inset-0 bg-[linear-gradient(135deg,#e6d6bf,#cdb89a)]" />
-                  <figcaption className="absolute inset-0 flex flex-col items-center justify-center gap-1 text-center">
-                    <span className="font-darya text-base text-primary">تصویر آرشیوی</span>
-                    <span className="text-[11px] text-muted-foreground">
-                      محل رزرو برای عکس سال‌های گذشته
-                    </span>
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-transparent to-transparent" />
+                  <figcaption className="absolute inset-x-0 bottom-0 p-4 text-sm text-white">
+                    {photo.alt}
                   </figcaption>
                 </figure>
               </Reveal>
