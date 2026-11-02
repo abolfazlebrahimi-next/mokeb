@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { motion } from "framer-motion";
 import { Moon, ArrowLeft } from "lucide-react";
 import { Reveal, InkDivider, Eyebrow } from "@/components/site/reveal";
@@ -26,7 +27,7 @@ export function TenNights() {
       <div className="pointer-events-none absolute inset-0 -z-0 opacity-[0.08]" aria-hidden>
         { }
         <img
-          src="/images/karbala-atmosphere.png"
+          src={assetUrl("/images/karbala-atmosphere.png")}
           alt=""
           className="h-full w-full object-cover"
         />

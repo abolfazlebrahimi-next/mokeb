@@ -3,6 +3,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  // Relative output paths allow deployment at the domain root or in a subfolder.
+  base: "./",
   plugins: [react()],
   resolve: {
     alias: {

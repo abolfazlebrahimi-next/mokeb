@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -60,7 +61,7 @@ export function NightDetail({
         >
           { }
           <img
-            src="/images/karbala-atmosphere.png"
+            src={assetUrl("/images/karbala-atmosphere.png")}
             alt=""
             className="h-full w-full object-cover"
           />

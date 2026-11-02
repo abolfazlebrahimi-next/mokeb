@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Quote, ChevronRight, ChevronLeft } from "lucide-react";
 import { figures, type Figure } from "@/data/figures";
@@ -177,7 +178,7 @@ export function FigureImage({
     return (
        
       <img
-        src={figure.image}
+        src={assetUrl(figure.image)}
         alt={figure.name}
         className={cn("object-cover", className)}
       />

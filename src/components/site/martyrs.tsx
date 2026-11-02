@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 import { Reveal, InkDivider, Eyebrow } from "@/components/site/reveal";
@@ -20,7 +21,7 @@ export function Figures() {
       <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.06]" aria-hidden>
         { }
         <img
-          src="/images/karbala-atmosphere.png"
+          src={assetUrl("/images/karbala-atmosphere.png")}
           alt=""
           className="h-full w-full object-cover"
         />
@@ -59,7 +60,7 @@ export function Figures() {
                 {f.image ? (
                    
                   <img
-                    src={f.image}
+                    src={assetUrl(f.image)}
                     alt={f.name}
                     className="h-full w-full object-cover"
                   />

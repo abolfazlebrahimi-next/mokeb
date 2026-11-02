@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { Reveal, InkDivider, Eyebrow } from "@/components/site/reveal";
 import {
   HeartHandshake,
@@ -65,7 +66,7 @@ export function Help() {
       <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.05]" aria-hidden>
         { }
         <img
-          src={siteConfig.images.brushDivider}
+          src={assetUrl(siteConfig.images.brushDivider)}
           alt=""
           className="h-full w-full object-cover"
         />

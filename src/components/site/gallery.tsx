@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { motion, AnimatePresence } from "framer-motion";
 import { Images, X, ChevronLeft, ChevronRight, ImageIcon } from "lucide-react";
 import { Reveal, InkDivider, Eyebrow } from "@/components/site/reveal";
@@ -129,7 +130,7 @@ export function Gallery() {
                   {img.src ? (
                      
                     <img
-                      src={img.src}
+                      src={assetUrl(img.src)}
                       alt={img.caption}
                       className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                     />
@@ -217,7 +218,7 @@ export function Gallery() {
                 {current.src ? (
                    
                   <img
-                    src={current.src}
+                    src={assetUrl(current.src)}
                     alt={current.caption}
                     className="h-full w-full object-contain"
                   />

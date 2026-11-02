@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { motion, useReducedMotion } from "framer-motion";
 import { ChevronLeft, Images, ScrollText, MapPin, HeartHandshake } from "lucide-react";
 import { siteConfig } from "@/data/site";
@@ -24,7 +25,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10" aria-hidden>
         { }
         <img
-          src={siteConfig.images.heroBackground}
+          src={assetUrl(siteConfig.images.heroBackground)}
           alt=""
           className="h-full w-full object-cover object-center opacity-25 duotone-sepia sm:opacity-40 md:opacity-55"
           fetchPriority="high"
@@ -128,7 +129,7 @@ export function Hero() {
                 {siteConfig.images.heroMainPhoto ? (
                    
                   <img
-                    src={siteConfig.images.heroMainPhoto}
+                    src={assetUrl(siteConfig.images.heroMainPhoto)}
                     alt="تصویر موکب عشاق الرقیه (س)"
                     className="h-full w-full object-cover"
                     fetchPriority="high"

@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { navSections, siteConfig } from "@/data/site";
@@ -55,7 +56,7 @@ export function Header() {
           >
             { }
             <img
-              src={siteConfig.images.logo}
+              src={assetUrl(siteConfig.images.logo)}
               alt=""
               className="h-full w-full object-cover"
             />

@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { assetUrl } from "@/lib/assets";
 import { MapPin, Heart } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { SocialGlyph } from "@/components/site/socials";
@@ -16,7 +17,7 @@ export function Footer() {
               <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-full border border-background/20 bg-background/10">
                 { }
                 <img
-                  src={siteConfig.images.logo}
+                  src={assetUrl(siteConfig.images.logo)}
                   alt=""
                   className="h-full w-full object-cover"
                 />
