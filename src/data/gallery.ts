@@ -148,10 +148,10 @@ export const galleryImages: GalleryImage[] = [
   {
     id: "s2",
     category: "servants",
-    caption: "خادمان موکب",
+    caption: "خادم کوچک موکب",
     src: "/images/gallery/servants/servant-2.jpg",
-    aspect: "landscape",
-    description: "گروهی از خادمان موکب در برابر پرچم‌های عزاداری.",
+    aspect: "square",
+    description: "دختری خردسال در لباس مشکی و سفید در کنار آذین‌بندی موکب.",
   },
   {
     id: "s3",
@@ -204,44 +204,18 @@ export const galleryImages: GalleryImage[] = [
   {
     id: "s11",
     category: "servants",
-    caption: "خادم کوچک و سفره پذیرایی",
+    caption: "آذین‌بندی موکب در شب",
     src: "/images/gallery/servants/servant-11.jpg",
-    aspect: "landscape",
-    description: "کودکی در کنار سفره پذیرایی موکب.",
+    aspect: "square",
+    description: "نمای شبانه موکب و پارچه‌نوشته عزاداری.",
   },
   {
     id: "s12",
     category: "servants",
-    caption: "خادمان پشت میز پذیرایی",
+    caption: "پارچه‌نوشته عزاداری موکب",
     src: "/images/gallery/servants/servant-12.jpg",
-    aspect: "landscape",
-    description: "خادمان موکب در حال سرو غذا و چای.",
-  },
-
-  // ===== تصاویر تازه خادمان و موکب =====
-  {
-    id: "new-servant-2",
-    category: "servants",
-    caption: "خادم کوچک موکب",
-    src: "/images/gallery/servants/1-servant-2.jpg",
-    aspect: "portrait",
-    description: "یکی از خادمان کوچک موکب در لباس خدمت.",
-  },
-  {
-    id: "new-servant-11",
-    category: "servants",
-    caption: "آذین‌بندی موکب در شب",
-    src: "/images/gallery/servants/2-servant-11.jpg",
-    aspect: "landscape",
-    description: "نمای شبانه موکب و پارچه‌نوشته عزاداری.",
-  },
-  {
-    id: "new-servant-12",
-    category: "servants",
-    caption: "موکب عشاق الرقیه",
-    src: "/images/gallery/servants/3-servant-12.jpg",
-    aspect: "landscape",
-    description: "نمایی از موکب در شب‌های عزاداری.",
+    aspect: "square",
+    description: "نمایی از موکب و پارچه‌نوشته عزاداری در شب.",
   },
 
   // ===== دختران رقیه‌ای =====
@@ -326,29 +300,29 @@ export const galleryImages: GalleryImage[] = [
     description: "دختران رقیه‌ای با کادوی کوچک موکب عشاق الرقیه (س).",
   },
 
-  // ===== آرشیو — سه تصویر تازه موکب =====
+  // ===== آرشیو — سه تصویر موکب =====
   {
     id: "archive-servant-2",
     category: "archive",
     caption: "خادم کوچک موکب",
-    src: "/images/gallery/servants/1-servant-2.jpg",
-    aspect: "portrait",
-    description: "یکی از خادمان کوچک موکب در لباس خدمت.",
+    src: "/images/gallery/servants/servant-2.jpg",
+    aspect: "square",
+    description: "دختری خردسال در لباس مشکی و سفید در کنار آذین‌بندی موکب.",
   },
   {
     id: "archive-servant-11",
     category: "archive",
     caption: "آذین‌بندی موکب در شب",
-    src: "/images/gallery/servants/2-servant-11.jpg",
-    aspect: "landscape",
+    src: "/images/gallery/servants/servant-11.jpg",
+    aspect: "square",
     description: "نمای شبانه موکب و پارچه‌نوشته عزاداری.",
   },
   {
     id: "archive-servant-12",
     category: "archive",
-    caption: "موکب عشاق الرقیه",
-    src: "/images/gallery/servants/3-servant-12.jpg",
-    aspect: "landscape",
-    description: "نمایی از موکب در شب‌های عزاداری.",
+    caption: "پارچه‌نوشته عزاداری موکب",
+    src: "/images/gallery/servants/servant-12.jpg",
+    aspect: "square",
+    description: "نمایی از موکب و پارچه‌نوشته عزاداری در شب.",
   },
 ];

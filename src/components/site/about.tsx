@@ -130,9 +130,9 @@ export function About() {
           {/* خاطره‌هایی از سال‌های خدمت */}
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
-              { src: "/images/gallery/servants/1-servant-2.jpg", alt: "یکی از خادمان کوچک موکب" },
-              { src: "/images/gallery/servants/2-servant-11.jpg", alt: "پارچه‌نوشته و آذین‌بندی موکب در شب" },
-              { src: "/images/gallery/servants/3-servant-12.jpg", alt: "نمایی از موکب و پارچه‌نوشته عزاداری" },
+              { src: "/images/gallery/servants/servant-2.jpg", alt: "یکی از خادمان کوچک موکب" },
+              { src: "/images/gallery/servants/servant-11.jpg", alt: "پارچه‌نوشته و آذین‌بندی موکب در شب" },
+              { src: "/images/gallery/servants/servant-12.jpg", alt: "نمایی از موکب و پارچه‌نوشته عزاداری" },
             ].map((photo, i) => (
               <Reveal key={photo.src} delay={i * 0.05}>
                 <figure className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-background-deep">
